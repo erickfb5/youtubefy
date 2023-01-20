@@ -1,9 +1,11 @@
 
-const Videos = () => {
+const Videos = ({videos}) => {
+
+ console.log('VIDEOS.JSX',videos)
   return (
-    <div>
-      Videos
-    </div>
+    <>
+      <>vid</>
+    </>
   )
 }
 
