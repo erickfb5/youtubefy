@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import { height } from "@mui/system";
 
 import SideBar from "./SideBar";
 import Videos from "./Videos";
@@ -29,7 +28,7 @@ const Feed = () => {
           variant="body2"
           sx={{ mt: 1.5, color: "#fff" }}
         >
-          Copyright 2023 YouTube Clone
+          Copyright 2023 YouTubefy
         </Typography>
       </Box>
 
