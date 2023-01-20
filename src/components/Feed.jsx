@@ -57,7 +57,7 @@ const Feed = () => {
             videos
           </span>
         </Typography>
-        <Videos />
+        <Videos videos={[]} />
       </Box>
     </Stack>
   );
