@@ -2,9 +2,8 @@ import { Stack } from "@mui/material";
 
 import { categories } from "../utils/constants";
 
-const selectedCategory = "New";
-const categoryMatch = (category) => category.name === selectedCategory
-const SideBar = () => {
+const SideBar = ({ selectedCategory, setSelectedCategory }) => {
+  const categoryMatch = (category) => category.name === selectedCategory;
   return (
     <Stack
       direction="row"
@@ -24,20 +23,25 @@ const SideBar = () => {
             background: categoryMatch(category) && "#fc1503",
             color: "white",
           }}
+
+          onClick={()=> setSelectedCategory(category.name)}
         >
           <span
             style={{
               color: categoryMatch(category) ? "white" : "red",
-              marginRight: '15px'
+              marginRight: "15px",
             }}
           >
             {category.icon}
           </span>
           <span
-           style={{
-            opacity: categoryMatch(category) ? "1" : "0.8",
-            marginRight: '15px'
-          }}>{category.name}</span>
+            style={{
+              opacity: categoryMatch(category) ? "1" : "0.8",
+              marginRight: "15px",
+            }}
+          >
+            {category.name}
+          </span>
         </button>
       ))}
     </Stack>
