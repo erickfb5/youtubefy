@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import SideBar from "./SideBar";
 import { height } from "@mui/system";
+
+import SideBar from "./SideBar";
+import Videos from "./Videos";
 
 const Feed = () => {
   return (
