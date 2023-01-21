@@ -2,15 +2,16 @@ import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 
 import { fetchFromAPI } from "../utils/fetchFromAPI";
-import { SideBar, Videos } from "./";
+import { SideBar } from "./";
+import { Videos } from "./Video";
 
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState('New')
-  const [videos, setVideos] = useState([])
+  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then(
-      (data) => setVideos(data.items)
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then((data) =>
+      setVideos(data.items)
     );
   }, [selectedCategory]);
 
@@ -31,11 +32,9 @@ const Feed = () => {
         }}
       >
         {" "}
-        <SideBar 
-        
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-        
+        <SideBar
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
         />
         <Typography
           className="copyright"
@@ -62,7 +61,8 @@ const Feed = () => {
             color: "white",
           }}
         >
-          {selectedCategory} <span
+          {selectedCategory}{" "}
+          <span
             style={{
               color: "#f31503",
             }}
