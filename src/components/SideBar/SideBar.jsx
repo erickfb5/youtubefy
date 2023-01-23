@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 
-import { categories } from "../utils/constants";
+import { categories } from "../../utils/constants";
 
 const SideBar = ({ selectedCategory, setSelectedCategory }) => {
   const categoryMatch = (category) => category.name === selectedCategory;

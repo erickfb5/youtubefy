@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { CheckCircle } from "@mui/icons-material";
 import { Box, CardContent, CardMedia, Typography } from "@mui/material";
 
-import { demoProfilePicture } from "../utils/constants";
+import { demoProfilePicture } from "../../utils/constants";
 
 const ChannelCard = ({ channelDetail, marginTop }) => {
   const channelInfo = channelDetail?.snippet;
@@ -19,7 +19,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
         width: { xs: "356px", md: "320px" },
         height: "326px",
         margin: "auto",
-        marginTop
+        marginTop,
       }}
     >
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
