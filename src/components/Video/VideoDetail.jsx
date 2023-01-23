@@ -43,7 +43,7 @@ const VideoDetail = () => {
               controls
             />
             <Typography 
-            // variant="h5" color="#fff" fontWeight="bold" p={2}
+            variant="h5" color="#fff" fontWeight="bold" p={2}
             >
               {title}
             </Typography>
@@ -68,13 +68,13 @@ const VideoDetail = () => {
               <Stack direction="row" gap="20px" alignItems="center">
                 <Typography 
                 
-                // variant="body1" sx={{ opacity: 0.7 }}
+                variant="body1" sx={{ opacity: 0.7 }}
                 >
                   {views}
                 </Typography>
                 <Typography 
                 
-                // variant="body1" sx={{ opacity: 0.7 }}
+                variant="body1" sx={{ opacity: 0.7 }}
                 >
                   {likes}
                 </Typography>
