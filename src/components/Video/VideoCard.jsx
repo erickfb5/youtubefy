@@ -16,8 +16,6 @@ const VideoCard = ({
     snippet,
   },
 }) => {
-  console.log(12345)
-  console.log(videoId)
   return (
     <Card
       sx={{

@@ -26,16 +26,16 @@ export const fetchFromAPI = async (url) => {
   }
 };
 
-axios
-  .request(options)
-  .then((response) => console.log(response))
-  .catch((error) => {
-	if (error.response) {
-      console.log("Request made but the server responded with an error",error )
-    } else if (error.request) {
-      console.error("Request made but no response is received from the server.")
-    } else {
-      console.log ('Error occured while setting up the request')
-    }
+// axios
+//   .request(options)
+//   .then((response) => console.log(response))
+//   .catch((error) => {
+// 	if (error.response) {
+//       console.log("Request made but the server responded with an error",error )
+//     } else if (error.request) {
+//       console.error("Request made but no response is received from the server.")
+//     } else {
+//       console.log ('Error occured while setting up the request')
+//     }
 
-  });
+//   });
